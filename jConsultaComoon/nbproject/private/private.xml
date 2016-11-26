@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="jConsulta">
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/LoginRequest.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/DisconnectRequest.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/interfaces/Connectable.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/model/Message.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/model/Alert.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/interfaces/Receivable.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/interfaces/Transmissible.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/LoginResponse.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/Petition.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/RegisterResponse.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/net/RegisterRequest.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/model/User.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaComoon/src/org/martin/jConsulta/system/SysInfo.java</file>
+        </group>
+    </open-files>
+</project-private>

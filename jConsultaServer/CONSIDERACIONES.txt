@@ -1,0 +1,3 @@
+- Para los listados ok y !ok enviar peticiones a servidor y este las redirige a los usuarios
+    administradores y por cada peticion que llega guardar en una lista para mostrar en parte
+    grafica.

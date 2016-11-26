@@ -1,0 +1,10 @@
+el software debe:
+
+	1.- Permitir que todos los alumnos hagan click en un boton enviando una alerta de consulta
+	2.- Permitir enviar mensajes de los alumnos al profesor --> comprobar en el servidor cuantos clientes conectados estan como administrador y solo ellos deben recibir las alertas
+
+	3.- Crear algoritmos para desconexiones de clientes.
+
+	4.- Enviar a cliente administrador una lista con todos los clientes conectados, si se conecta o desconecta uno se debe actualizar la lista.
+
+	5.- En el administrador ver un listado de clientes que han hecho la alerta y los que faltan en un periodo de tiempo especificado con anterioridad actualizandose cuando un cliente liste ok --> una especie de sesion	

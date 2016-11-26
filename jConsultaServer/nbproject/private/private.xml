@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="jConsulta">
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/db/DAOUserType.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/db/DAOMessage.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/CONSIDERACIONES.txt</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/net/TRequestManager.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/net/Server.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/db/DAOFactory.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/db/DAOAlert.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/db/DbConnection.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/net/Client.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/db/DAO.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/scriptJConsulta.sql</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/src/org/martin/jConsultas/db/DAOUser.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/Java%20WEB/jConsultaServer/REQUERMIENTOS.txt</file>
+        </group>
+    </open-files>
+</project-private>
