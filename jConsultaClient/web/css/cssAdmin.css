@@ -19,24 +19,33 @@ body{
 }
 
 .listUsers{
-    width: 30%;
+    width: 28%;
     height: 700px;
-    background-color: red;
+    background-color: #f44336;
     float: left;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
 }
 
 .listReady{
-    width: 40%;
+    width: 38%;
     height: 700px;
-    background-color: green;
+    background-color: #e3f2fd;
     float: left;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
 }
 
 .listMessages{
-    width: 30%;
+    width: 28%;
     height: 700px;
-    background-color: yellow;
+    background-color: #7cb342;
     float: left;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
 }
 
 a{

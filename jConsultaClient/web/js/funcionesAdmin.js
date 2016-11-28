@@ -7,7 +7,7 @@
 function updatePanelAdmin(){
     window.setTimeout(function(){
         location.href="http://localhost:8084/jConsultaClient/admin.jsp";
-    }, 1000);
+    }, 3000);
 }
 
 function updateAll(){

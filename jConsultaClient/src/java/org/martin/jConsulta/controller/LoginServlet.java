@@ -43,17 +43,17 @@ public class LoginServlet extends HttpServlet {
         LoginResponse loginResponse = (LoginResponse) client.getRecceivedObject();
     
         if (loginResponse.isRightLogin()){
-            if (loginResponse.getUser().isAdmin())
-                request.getSession().setAttribute("tReceiver", new TReceiver(client));
-            else
-                request.getSession().setAttribute("tReceiver", new org.martin.
-                        jConsulta.net.client.TReceiver(client));
             request.getSession().setAttribute("client", client);
             request.getSession().setAttribute("user", loginResponse.getUser());
-            if (loginResponse.getUser().getIdType() == 1)
+            if (loginResponse.getUser().isAdmin()){
+                request.getSession().setAttribute("tReceiver", new TReceiver(client));
                 response.sendRedirect("admin.jsp");
-            else
+            }
+            else{
+                request.getSession().setAttribute("tReceiver", new org.martin.
+                        jConsulta.net.client.TReceiver(client));
                 response.sendRedirect("client.jsp");
+            }
         }
         else{
             response.sendRedirect("index.jsp?e="+Error.LOGIN);

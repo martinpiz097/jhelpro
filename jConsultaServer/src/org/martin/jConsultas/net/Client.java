@@ -152,10 +152,10 @@ public final class Client extends Thread implements Connectable{
                         closeConnection();
                         Server.getServer().removeClientById(getUser().getId());
                     }
-                    else if (pet == Petition.RESTORE && user.isAdmin())
+                    else if (pet == Petition.RESTORE_ALERTS && user.isAdmin())
                         for (Client client : Server.getServer().getClientsConnected())
                             if (!client.isAdmin())
-                                client.sendObject(Petition.RESTORE);
+                                client.sendObject(Petition.RESTORE_ALERTS);
                 }
                 
                 Thread.sleep(300);

@@ -63,7 +63,7 @@
                 </ul>
                     <a href="register.jsp" target="_blank"><button>Registrar Usuarios</button></a>
                     <a href="cleanAlerts.do"><button>Limpiar</button></a>
-                    <a href="admin.jsp"><button>Actualizar</button></a>
+                    <!--<a href="admin.jsp"><button>Actualizar</button></a>-->
                     <a href="closeSession.do"><button>Cerrar Sesion</button></a>
                     
             </div>

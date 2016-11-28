@@ -63,7 +63,7 @@ public class TReceiver extends Thread implements Connectable{
             try {
                 objRec = getRecceivedObject();
                 if (objRec instanceof Petition)
-                    if ((Petition)objRec == Petition.RESTORE)
+                    if ((Petition)objRec == Petition.RESTORE_ALERTS)
                         alertReady = false;
                 Thread.sleep(300);
             } catch (InterruptedException ex) {

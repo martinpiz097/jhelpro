@@ -72,7 +72,7 @@ public class TReceiver extends Thread implements Connectable{
     
     public void cleanAlerts(){
         alerts.clear();
-        sendObject(Petition.RESTORE);
+        sendObject(Petition.RESTORE_ALERTS);
     }
     
     public void stopThread(){

@@ -38,7 +38,6 @@ public class CleanAlertsServlet extends HttpServlet {
         HttpSession session = request.getSession();
         ((TReceiver)session.getAttribute("tReceiver"))
                 .cleanAlerts();
-        ((Client)session.getAttribute("client")).sendObject(Petition.RESTORE);
         response.sendRedirect("admin.jsp");
     }
 

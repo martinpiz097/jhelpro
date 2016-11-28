@@ -4,6 +4,17 @@
     Author     : martin
 --%>
 
+    <%@page import="org.martin.jConsulta.model.User"%>
+<%
+        User login = (User)session.getAttribute("user");
+    
+        if(login == null || !login.isAdmin()){
+            response.sendRedirect("index.jsp?e="+org.martin.jConsulta.controller.Error.INVALID_ACCESS);
+            return;
+        }
+    
+    %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
