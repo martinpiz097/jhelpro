@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.martin.jConsulta.net;
+package org.martin.jConsulta.net.admin;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -12,6 +12,9 @@ import org.martin.electroList.structure.ElectroList;
 import org.martin.jConsulta.model.Alert;
 import org.martin.jConsulta.model.Message;
 import org.martin.jConsulta.model.User;
+import org.martin.jConsulta.net.Client;
+import org.martin.jConsulta.net.DisconnectRequest;
+import org.martin.jConsulta.net.Petition;
 import org.martin.jConsulta.net.interfaces.Connectable;
 
 /**
@@ -65,6 +68,11 @@ public class TReceiver extends Thread implements Connectable{
                 missings.add(user);
         }
         return missings;
+    }
+    
+    public void cleanAlerts(){
+        alerts.clear();
+        sendObject(Petition.RESTORE);
     }
     
     public void stopThread(){

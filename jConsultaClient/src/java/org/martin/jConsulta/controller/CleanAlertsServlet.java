@@ -7,7 +7,6 @@ package org.martin.jConsulta.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Enumeration;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,14 +14,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.martin.jConsulta.net.Client;
+import org.martin.jConsulta.net.Petition;
 import org.martin.jConsulta.net.admin.TReceiver;
 
 /**
  *
  * @author martin
  */
-@WebServlet(name = "CloseSessionServlet", urlPatterns = {"/closeSession.do"})
-public class CloseSessionServlet extends HttpServlet {
+@WebServlet(name = "CleanAlertsServlet", urlPatterns = {"/cleanAlerts.do"})
+public class CleanAlertsServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,18 +36,10 @@ public class CloseSessionServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
-        Client client = (Client) session.getAttribute("client");
-        TReceiver receiver = (TReceiver) session.getAttribute("tReceiver");
-        receiver.stopThread();
-        client.sendDisconnectPetition();
-        client.disconnect();
-        client = null;
-        receiver = null;
-        
-        Enumeration<String> attributeNames = session.getAttributeNames();
-        while (attributeNames.hasMoreElements())            
-            session.removeAttribute(attributeNames.nextElement());
-        response.sendRedirect("index.jsp");
+        ((TReceiver)session.getAttribute("tReceiver"))
+                .cleanAlerts();
+        ((Client)session.getAttribute("client")).sendObject(Petition.RESTORE);
+        response.sendRedirect("admin.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -62,7 +54,7 @@ public class CloseSessionServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        response.sendRedirect("index.jsp");
     }
 
     /**

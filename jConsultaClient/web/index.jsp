@@ -18,7 +18,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Login</title>
         <link rel="stylesheet" href="css/cssGuiAlumno.css" media="screen"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
             <br>
             <input type="submit" value="Ingresar">
         </form>
-        <a href="register.jsp"><button>¿No tienes cuenta? Regístrate</button></a>
+        <!--<a href="register.jsp"><button>¿No tienes cuenta? Regístrate</button></a>-->
         
     </body>
 </html>

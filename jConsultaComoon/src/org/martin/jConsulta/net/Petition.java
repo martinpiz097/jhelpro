@@ -12,5 +12,5 @@ import java.io.Serializable;
  * @author martin
  */
 public enum Petition implements Serializable{
-    DISCONNECT;
+    DISCONNECT, RESTORE;
 }

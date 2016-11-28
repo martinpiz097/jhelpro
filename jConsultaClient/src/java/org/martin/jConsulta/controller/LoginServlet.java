@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.martin.jConsulta.net.Client;
 import org.martin.jConsulta.net.LoginRequest;
 import org.martin.jConsulta.net.LoginResponse;
-import org.martin.jConsulta.net.TReceiver;
+import org.martin.jConsulta.net.admin.TReceiver;
 
 /**
  *
@@ -43,7 +43,11 @@ public class LoginServlet extends HttpServlet {
         LoginResponse loginResponse = (LoginResponse) client.getRecceivedObject();
     
         if (loginResponse.isRightLogin()){
-            request.getSession().setAttribute("tReceiver", new TReceiver(client));
+            if (loginResponse.getUser().isAdmin())
+                request.getSession().setAttribute("tReceiver", new TReceiver(client));
+            else
+                request.getSession().setAttribute("tReceiver", new org.martin.
+                        jConsulta.net.client.TReceiver(client));
             request.getSession().setAttribute("client", client);
             request.getSession().setAttribute("user", loginResponse.getUser());
             if (loginResponse.getUser().getIdType() == 1)

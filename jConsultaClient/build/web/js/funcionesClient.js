@@ -15,3 +15,10 @@ function sendMessage(e) {
         });
     }
 }
+
+function changeButton(){
+    
+}
+
+
+

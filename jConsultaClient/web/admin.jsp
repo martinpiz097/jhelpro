@@ -5,11 +5,10 @@
 --%>
 <%@page import="org.martin.jConsulta.model.Message"%>
 <%@page import="org.martin.jConsulta.model.Alert"%>
-<%@page import="org.martin.jConsulta.net.TReceiver"%>
+<%@page import="org.martin.jConsulta.net.admin.TReceiver"%>
 <%@page import="org.martin.jConsulta.model.User"%>
 <%
     User login = (User)session.getAttribute("user");
-    boolean alertReady = session.getAttribute("alertReady") != null;
     
     if(login == null || !login.isAdmin()){
         response.sendRedirect("index.jsp?e="+org.martin.jConsulta.controller.Error.INVALID_ACCESS);
@@ -25,11 +24,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/cssAdmin.css" media="screen">
-        <title>JSP Page</title>
+        <title>Panel de Control</title>
+        <script src="js/funcionesAdmin.js"></script>
     </head>
-    <body>
+    <body onfocus="updatePanelAdmin()">
         <div class="contenedor">
             <div class="listUsers">
+                <h3>Listado de Alumnos</h3>
                 <ul>
                     <%
                         for(User user : reveiver.getConnectedUsers()){
@@ -38,7 +39,6 @@
                     %>
                     
                 </ul>
-                
                 
             </div>
             
@@ -61,6 +61,7 @@
                     %>
                     
                 </ul>
+                    <a href="register.jsp" target="_blank"><button>Registrar Usuarios</button></a>
                     <a href="cleanAlerts.do"><button>Limpiar</button></a>
                     <a href="admin.jsp"><button>Actualizar</button></a>
                     <a href="closeSession.do"><button>Cerrar Sesion</button></a>

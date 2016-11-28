@@ -17,6 +17,7 @@ import javax.swing.JOptionPane;
 import org.martin.jConsulta.model.Alert;
 import org.martin.jConsulta.model.User;
 import org.martin.jConsulta.net.Client;
+import org.martin.jConsulta.net.client.TReceiver;
 
 /**
  *
@@ -41,7 +42,8 @@ public class SendAlertServlet extends HttpServlet {
             Alert alert = new Alert((User) session.getAttribute("user"));
             Client client = (Client) session.getAttribute("client");
             client.sendObject(alert);
-            session.setAttribute("alertReady", true);
+            TReceiver receiver = (TReceiver) session.getAttribute("tReceiver");
+            receiver.setAlertReady(true);
         }
         response.sendRedirect("client.jsp");
     }

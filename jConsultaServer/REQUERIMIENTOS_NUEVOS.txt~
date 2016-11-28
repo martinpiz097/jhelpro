@@ -1,0 +1,4 @@
+- El chat puede que sea eliminado
+- El boton limpiar debe dejar a todos con gris
+- Solo el admin puede registrar
+- La actualización en el admin debe ser con ajax
